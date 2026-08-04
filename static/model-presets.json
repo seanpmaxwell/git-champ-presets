@@ -1,0 +1,36 @@
+{
+  "claude": {
+    "command": "claude",
+    "baseArgs": ["-p"],
+    "route": {
+      "instruction": { "to": "argv" },
+      "context": { "to": "stdin" }
+    },
+    "modelFlag": "--model"
+  },
+  "codex": {
+    "command": "codex",
+    "baseArgs": ["exec"],
+    "route": {
+      "instruction": { "to": "argv" },
+      "context": { "to": "stdin" }
+    },
+    "stdinSentinel": "-"
+  },
+  "gemini": {
+    "command": "gemini",
+    "baseArgs": [],
+    "route": {
+      "instruction": { "to": "flag", "flag": "-p" },
+      "context": { "to": "stdin" }
+    }
+  },
+  "llm": {
+    "command": "llm",
+    "baseArgs": [],
+    "route": {
+      "instruction": { "to": "flag", "flag": "--system" },
+      "context": { "to": "stdin" }
+    }
+  }
+}
