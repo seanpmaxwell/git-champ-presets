@@ -1,0 +1,23 @@
+{
+  "claude-opus": {
+    "clientDisplayName": "Claude Code",
+    "modelDisplayName": "Opus 4.6",
+    "exec": "claude",
+    "arguments": ["--model", "opus", "-p"]
+  },
+  "codex": {
+    "clientDisplayName": "Codex",
+    "exec": "codex",
+    "arguments": ["exec"],
+  },
+  "gemini": {
+    "clientDisplayName": "Gemini CLI",
+    "exec": "gemini",
+    "arguments": ["-p"]
+  },
+  "llm": {
+    "clientDisplayName": "Ollama",
+    "exec": "llm",
+    "arguments": ["--system"]
+  }
+}
